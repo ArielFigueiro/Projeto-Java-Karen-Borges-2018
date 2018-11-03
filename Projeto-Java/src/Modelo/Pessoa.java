@@ -1,3 +1,5 @@
+package Modelo;
+
 
 public class Pessoa {
 	 	//---Atributos
@@ -10,10 +12,18 @@ public class Pessoa {
 	    private String fone;
 	    private String rg;
 	    private String cpf;
+            private String Experiencia;
+
+    
 	    
 	  
 	    //----Getters and Setters
-	    
+                public String getExperiencia() {
+                     return Experiencia;
+                }
+                public void setExperiencia(String Experiencia) {
+                    this.Experiencia = Experiencia;
+                }
 		public int getCodCadastro() {
 			return codCadastro;
 		}
@@ -69,20 +79,21 @@ public class Pessoa {
 			this.cpf = cpf;
 		}
 
-		//-------CONSTRUTORES
-		public Pessoa(int codCadastro, String nome, String sobrenome, String dtNascimento, char genero, String email,
-				String fone, String rg, String cpf) {
-			super();
-			this.codCadastro = codCadastro;
-			this.nome = nome;
-			this.sobrenome = sobrenome;
-			this.dtNascimento = dtNascimento;
-			this.genero = genero;
-			this.email = email;
-			this.fone = fone;
-			this.rg = rg;
-			this.cpf = cpf;
-		}
+		//-------CONSTRUTOR
+
+                public Pessoa(int codCadastro, String nome, String sobrenome, String dtNascimento, char genero, String email, String fone, String rg, String cpf, String Experiencia) {
+                    this.codCadastro = codCadastro;
+                    this.nome = nome;
+                    this.sobrenome = sobrenome;
+                    this.dtNascimento = dtNascimento;
+                    this.genero = genero;
+                    this.email = email;
+                    this.fone = fone;
+                    this.rg = rg;
+                    this.cpf = cpf;
+                    this.Experiencia = Experiencia;
+                }
+		
 	
 	    
 }

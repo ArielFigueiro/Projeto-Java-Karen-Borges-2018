@@ -1,3 +1,5 @@
+package Modelo;
+
 
 public class Cliente extends Pessoa {
 	private int codCliente;
@@ -11,8 +13,8 @@ public class Cliente extends Pessoa {
 	}
 
 	public Cliente(int codCadastro, String nome, String sobrenome, String dtNascimento, char genero, String email,
-			String fone, String rg, String cpf,int codCliente) {
-		super(codCadastro, nome, sobrenome, dtNascimento, genero, email, fone, rg, cpf);
+			String fone, String rg, String cpf,int codCliente, String experiencia) {
+		super(codCadastro, nome, sobrenome, dtNascimento, genero, email, fone, rg, cpf,experiencia);
 		this.codCliente = codCliente;
 	}
 	

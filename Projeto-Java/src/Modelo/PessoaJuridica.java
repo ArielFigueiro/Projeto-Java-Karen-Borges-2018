@@ -10,11 +10,11 @@
  */
 public class PessoaJuridica {
     
-    private String id_PessoaJuridica;
+    private int id_PessoaJuridica;
     private String CNPJ;
     private String Nome_Empresa;
 
-    public PessoaJuridica(String id_PessoaJuridica, String CNPJ, String Nome_Empresa) {
+    public PessoaJuridica(int id_PessoaJuridica, String CNPJ, String Nome_Empresa) {
         this.id_PessoaJuridica = id_PessoaJuridica;
         this.CNPJ = CNPJ;
         this.Nome_Empresa = Nome_Empresa;
@@ -26,11 +26,11 @@ public class PessoaJuridica {
     }
     
 
-    public String getId_PessoaJuridica() {
+    public int getId_PessoaJuridica() {
         return id_PessoaJuridica;
     }
 
-    public void setId_PessoaJuridica(String id_PessoaJuridica) {
+    public void setId_PessoaJuridica(int id_PessoaJuridica) {
         this.id_PessoaJuridica = id_PessoaJuridica;
     }
 

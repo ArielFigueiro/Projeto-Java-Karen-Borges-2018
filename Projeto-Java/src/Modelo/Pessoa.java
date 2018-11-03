@@ -3,7 +3,9 @@ package Modelo;
 
 public class Pessoa {
 	 	//---Atributos
-	    private int codCadastro;
+	    private int id_Pessoa;
+            private String login;
+            private String senha;             
 	    private String nome;
 	    private String sobrenome;
 	    private String dtNascimento;//alterar para tipo calender
@@ -14,22 +16,42 @@ public class Pessoa {
 	    private String cpf;
             private String Experiencia;
 
-    
+    public Pessoa(String nome, String cpf, int idade) {
+        
+    }    
 	    
 	  
 	    //----Getters and Setters
+                public int getId_Pessoa() {
+                    return id_Pessoa;
+                }
+
+                public void setId_Pessoa(int id_Pessoa) {
+                    this.id_Pessoa = id_Pessoa;
+                }
+
+                public String getLogin() {
+                    return login;
+                }
+
+                public void setLogin(String login) {
+                    this.login = login;
+                }
+
+                public String getSenha() {
+                    return senha;
+                }
+
+                public void setSenha(String senha) {
+                    this.senha = senha;
+                }
                 public String getExperiencia() {
                      return Experiencia;
                 }
                 public void setExperiencia(String Experiencia) {
                     this.Experiencia = Experiencia;
                 }
-		public int getCodCadastro() {
-			return codCadastro;
-		}
-		public void setCodCadastro(int codCadastro) {
-			this.codCadastro = codCadastro;
-		}
+		
 		public String getNome() {
 			return nome;
 		}
@@ -82,7 +104,7 @@ public class Pessoa {
 		//-------CONSTRUTOR
 
                 public Pessoa(int codCadastro, String nome, String sobrenome, String dtNascimento, char genero, String email, String fone, String rg, String cpf, String Experiencia) {
-                    this.codCadastro = codCadastro;
+                    this.id_Pessoa = id_Pessoa;
                     this.nome = nome;
                     this.sobrenome = sobrenome;
                     this.dtNascimento = dtNascimento;
@@ -93,7 +115,5 @@ public class Pessoa {
                     this.cpf = cpf;
                     this.Experiencia = Experiencia;
                 }
-		
-	
-	    
+    
 }

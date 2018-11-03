@@ -12,10 +12,10 @@ package Modelo;
  */
 public class SolicitaServico {
     
-    private String id_Servico;
+    private int id_Servico;
     private String nome;
 
-    public SolicitaServico(String id_Servico, String nome) {
+    public SolicitaServico(int id_Servico, String nome) {
         this.id_Servico = id_Servico;
         this.nome = nome;
     }
@@ -27,11 +27,11 @@ public class SolicitaServico {
     
     
 
-    public String getId_Servico() {
+    public int getId_Servico() {
         return id_Servico;
     }
 
-    public void setId_Servico(String id_Servico) {
+    public void setId_Servico(int id_Servico) {
         this.id_Servico = id_Servico;
     }
 

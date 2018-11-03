@@ -3,15 +3,18 @@ package Modelo;
 
 public class Prestador extends Pessoa {
     //Atributos
-	private int codPrestador;
+	private int id_Prestador;
 	private int cnpj;
+    private final String fone;
 	//Getters e Setters
-	public int getCodPrestador() {
-		return codPrestador;
-	}
-	public void setCodPrestador(int codPrestador) {
-		this.codPrestador = codPrestador;
-	}
+        public int getId_Prestador() {
+            return id_Prestador;
+        }
+
+        public void setId_Prestador(int id_Prestador) {
+             this.id_Prestador = id_Prestador;
+        }   
+	
 	public int getCnpj() {
 		return cnpj;
 	}
@@ -19,12 +22,13 @@ public class Prestador extends Pessoa {
 		this.cnpj = cnpj;
 	}
         //Construtores
-        public Prestador(int codCadastro, String nome, String sobrenome, String dtNascimento, char genero, String email,
-			String fone, String rg, String cpf,int codPrestador,int cnpj,String experiencia) {
-		super(codCadastro, nome, sobrenome, dtNascimento, genero, email, fone, rg, cpf,experiencia);
-		this.codPrestador = codPrestador;
-		this.cnpj = cnpj;
-		// TODO Auto-generated constructor stub
-	}
-		
-}
+
+    public Prestador(int id_Prestador, int cnpj, String fone, int codCadastro, String nome, String sobrenome, String dtNascimento, char genero, String email,String rg, String cpf, String Experiencia) {
+        super(codCadastro, nome, sobrenome, dtNascimento, genero, email, fone, rg, cpf, Experiencia);
+        this.id_Prestador = id_Prestador;
+        this.cnpj = cnpj;
+        this.fone = fone;
+    }
+        
+
+ }

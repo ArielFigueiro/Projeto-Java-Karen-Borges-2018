@@ -11,13 +11,13 @@ package Modelo;
  * @author Ariél
  */
 public class DadosAcademicos {
-    private String cod_dados_academ;
+    private int id_dados_academico;
     private String situacao;
     private String data_ingresso;
     private String data_final;
 
-    public DadosAcademicos(String cod_dados_academ, String situacao, String data_ingresso, String data_final, String curso, String instituicao) {
-        this.cod_dados_academ = cod_dados_academ;
+    public DadosAcademicos(int id_dados_academ, String situacao, String data_ingresso, String data_final, String curso, String instituicao) {
+        this.id_dados_academico = id_dados_academ;
         this.situacao = situacao;
         this.data_ingresso = data_ingresso;
         this.data_final = data_final;
@@ -30,15 +30,16 @@ public class DadosAcademicos {
     /**
      * @return the cod_dados_academ
      */
-    public String getCod_dados_academ() {
-        return cod_dados_academ;
+    public int getCod_dados_academ() {
+        return id_dados_academico;
     }
 
     /**
      * @param cod_dados_academ the cod_dados_academ to set
      */
-    public void setCod_dados_academ(String cod_dados_academ) {
-        this.cod_dados_academ = cod_dados_academ;
+    public int setCod_dados_academ(String cod_dados_academ) {
+        this.id_dados_academico = id_dados_academico;
+        return 0;
     }
 
     /**

@@ -14,6 +14,7 @@ import java.util.ArrayList;
  * @author 0341185
  */
 public class BancoDeTalentos {
+    private int id_BancoDeTalentos;
     private boolean disponibilidade;
     private ArrayList CBO;
 

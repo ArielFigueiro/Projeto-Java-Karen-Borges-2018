@@ -10,11 +10,11 @@
  */
 public class Feedback {
     
-    private String id_Feedback;
+    private int id_Feedback;
     private String mensagem;
     private int pontuacao;
 
-    public Feedback(String id_Feedback, String mensagem, int pontuacao) {
+    public Feedback(int id_Feedback, String mensagem, int pontuacao) {
         this.id_Feedback = id_Feedback;
         this.mensagem = mensagem;
         this.pontuacao = pontuacao;
@@ -27,11 +27,11 @@ public class Feedback {
 
    
     
-    public String getId_Feedback() {
+    public int getId_Feedback() {
         return id_Feedback;
     }
 
-    public void setId_Feedback(String id_Feedback) {
+    public void setId_Feedback(int id_Feedback) {
         this.id_Feedback = id_Feedback;
     }
 

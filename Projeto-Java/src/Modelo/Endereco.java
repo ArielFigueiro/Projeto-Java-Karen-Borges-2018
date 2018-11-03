@@ -11,7 +11,7 @@ package Modelo;
  * @author Ariél
  */
 public class Endereco {
-    private String cod_cidade;
+    private int id_cidade;
     private String UF;
     private String cep;
     private String logradouro;
@@ -23,15 +23,15 @@ public class Endereco {
     /**
      * @return the cod_cidade
      */
-    public String getCod_cidade() {
-        return cod_cidade;
+    public int getCod_cidade() {
+        return id_cidade;
     }
 
     /**
      * @param cod_cidade the cod_cidade to set
      */
-    public void setCod_cidade(String cod_cidade) {
-        this.cod_cidade = cod_cidade;
+    public void setCod_cidade(int cod_cidade) {
+        this.id_cidade = id_cidade;
     }
 
     /**
@@ -77,7 +77,7 @@ public class Endereco {
     }
 
     public Endereco(String cod_cidade, String UF, String cep, String logradouro, String bairro, String numero, String rg, String cpf) {
-        this.cod_cidade = cod_cidade;
+        this.id_cidade = id_cidade;
         this.UF = UF;
         this.cep = cep;
         this.logradouro = logradouro;

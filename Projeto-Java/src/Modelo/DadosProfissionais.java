@@ -10,13 +10,13 @@
  */
 public class DadosProfissionais {
     
-    private String id_profissional;
+    private int id_profissional;
     private String NomeEmpresa;
     private String Funcao;
     private float TempoServico;
     private boolean Situacao;
 
-    public DadosProfissionais(String id_profissional, String NomeEmpresa, String Funcao, float TempoServico, boolean Situacao) {
+    public DadosProfissionais(int id_profissional, String NomeEmpresa, String Funcao, float TempoServico, boolean Situacao) {
         this.id_profissional = id_profissional;
         this.NomeEmpresa = NomeEmpresa;
         this.Funcao = Funcao;
@@ -26,11 +26,11 @@ public class DadosProfissionais {
     
     
 
-    public String getId_profissional() {
+    public int getId_profissional() {
         return id_profissional;
     }
 
-    public void setId_profissional(String id_profissional) {
+    public void setId_profissional(int id_profissional) {
         this.id_profissional = id_profissional;
     }
 
